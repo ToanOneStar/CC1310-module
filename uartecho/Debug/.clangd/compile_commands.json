@@ -1,0 +1,47 @@
+[
+   {
+      "directory" : "C:/Users/Dell/workspace_ccstheia/uartecho/Debug",
+      "command"   : "clang++ -I\"C:/Users/Dell/workspace_ccstheia/uartecho\" -I\"C:/TI/simplelink_cc13x0_sdk_4_20_02_07/source/ti/posix/ccs\" -I\"C:/Users/Dell/Downloads/ti-cgt-arm_20.2.7.LTS/include\" -DDeviceFamily_CC13X0 -I\"C:/TI/simplelink_cc13x0_sdk_4_20_02_07/source\" -I\"C:/TI/simplelink_cc13x0_sdk_4_20_02_07/kernel/tirtos/packages\" -I\"C:/TI/xdctools_3_51_03_28_core/packages\" -I\"C:/Users/Dell/workspace_ccstheia/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/..\" -Dxdc_target_types__=\"ti/targets/arm/elf/std.h\" -Dxdc_target_name__=M3 -Dxdc_cfg__xheader__=\"C:/Users/Dell/workspace_ccstheia/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/package/cfg/release_pem3.h\" -xc",
+      "file"      : "C:/Users/Dell/workspace_ccstheia/uartecho/CC1310_LAUNCHXL.c"
+   },
+   {
+      "directory" : "C:/Users/Dell/workspace_ccstheia/uartecho/Debug",
+      "command"   : "clang++ -I\"C:/Users/Dell/workspace_ccstheia/uartecho\" -I\"C:/TI/simplelink_cc13x0_sdk_4_20_02_07/source/ti/posix/ccs\" -I\"C:/Users/Dell/Downloads/ti-cgt-arm_20.2.7.LTS/include\" -DDeviceFamily_CC13X0 -I\"C:/TI/simplelink_cc13x0_sdk_4_20_02_07/source\" -I\"C:/TI/simplelink_cc13x0_sdk_4_20_02_07/kernel/tirtos/packages\" -I\"C:/TI/xdctools_3_51_03_28_core/packages\" -I\"C:/Users/Dell/workspace_ccstheia/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/..\" -Dxdc_target_types__=\"ti/targets/arm/elf/std.h\" -Dxdc_target_name__=M3 -Dxdc_cfg__xheader__=\"C:/Users/Dell/workspace_ccstheia/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/package/cfg/release_pem3.h\" -xc",
+      "file"      : "C:/Users/Dell/workspace_ccstheia/uartecho/CC1310_LAUNCHXL_fxns.c"
+   },
+   {
+      "directory" : "C:/Users/Dell/workspace_ccstheia/uartecho/Debug",
+      "command"   : "clang++ -I\"C:/Users/Dell/workspace_ccstheia/uartecho\" -I\"C:/TI/simplelink_cc13x0_sdk_4_20_02_07/source/ti/posix/ccs\" -I\"C:/Users/Dell/Downloads/ti-cgt-arm_20.2.7.LTS/include\" -DDeviceFamily_CC13X0 -I\"C:/TI/simplelink_cc13x0_sdk_4_20_02_07/source\" -I\"C:/TI/simplelink_cc13x0_sdk_4_20_02_07/kernel/tirtos/packages\" -I\"C:/TI/xdctools_3_51_03_28_core/packages\" -I\"C:/Users/Dell/workspace_ccstheia/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/..\" -Dxdc_target_types__=\"ti/targets/arm/elf/std.h\" -Dxdc_target_name__=M3 -Dxdc_cfg__xheader__=\"C:/Users/Dell/workspace_ccstheia/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/package/cfg/release_pem3.h\" -xc",
+      "file"      : "C:/Users/Dell/workspace_ccstheia/uartecho/IIC.c"
+   },
+   {
+      "directory" : "C:/Users/Dell/workspace_ccstheia/uartecho/Debug",
+      "command"   : "clang++ -I\"C:/Users/Dell/workspace_ccstheia/uartecho\" -I\"C:/TI/simplelink_cc13x0_sdk_4_20_02_07/source/ti/posix/ccs\" -I\"C:/Users/Dell/Downloads/ti-cgt-arm_20.2.7.LTS/include\" -DDeviceFamily_CC13X0 -I\"C:/TI/simplelink_cc13x0_sdk_4_20_02_07/source\" -I\"C:/TI/simplelink_cc13x0_sdk_4_20_02_07/kernel/tirtos/packages\" -I\"C:/TI/xdctools_3_51_03_28_core/packages\" -I\"C:/Users/Dell/workspace_ccstheia/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/..\" -Dxdc_target_types__=\"ti/targets/arm/elf/std.h\" -Dxdc_target_name__=M3 -Dxdc_cfg__xheader__=\"C:/Users/Dell/workspace_ccstheia/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/package/cfg/release_pem3.h\" -xc",
+      "file"      : "C:/Users/Dell/workspace_ccstheia/uartecho/MPU_6050.c"
+   },
+   {
+      "directory" : "C:/Users/Dell/workspace_ccstheia/uartecho/Debug",
+      "command"   : "clang++ -I\"C:/Users/Dell/workspace_ccstheia/uartecho\" -I\"C:/TI/simplelink_cc13x0_sdk_4_20_02_07/source/ti/posix/ccs\" -I\"C:/Users/Dell/Downloads/ti-cgt-arm_20.2.7.LTS/include\" -DDeviceFamily_CC13X0 -I\"C:/TI/simplelink_cc13x0_sdk_4_20_02_07/source\" -I\"C:/TI/simplelink_cc13x0_sdk_4_20_02_07/kernel/tirtos/packages\" -I\"C:/TI/xdctools_3_51_03_28_core/packages\" -I\"C:/Users/Dell/workspace_ccstheia/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/..\" -Dxdc_target_types__=\"ti/targets/arm/elf/std.h\" -Dxdc_target_name__=M3 -Dxdc_cfg__xheader__=\"C:/Users/Dell/workspace_ccstheia/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/package/cfg/release_pem3.h\" -xc",
+      "file"      : "C:/Users/Dell/workspace_ccstheia/uartecho/ccfg.c"
+   },
+   {
+      "directory" : "C:/Users/Dell/workspace_ccstheia/uartecho/Debug",
+      "command"   : "clang++ -I\"C:/Users/Dell/workspace_ccstheia/uartecho\" -I\"C:/TI/simplelink_cc13x0_sdk_4_20_02_07/source/ti/posix/ccs\" -I\"C:/Users/Dell/Downloads/ti-cgt-arm_20.2.7.LTS/include\" -DDeviceFamily_CC13X0 -I\"C:/TI/simplelink_cc13x0_sdk_4_20_02_07/source\" -I\"C:/TI/simplelink_cc13x0_sdk_4_20_02_07/kernel/tirtos/packages\" -I\"C:/TI/xdctools_3_51_03_28_core/packages\" -I\"C:/Users/Dell/workspace_ccstheia/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/..\" -Dxdc_target_types__=\"ti/targets/arm/elf/std.h\" -Dxdc_target_name__=M3 -Dxdc_cfg__xheader__=\"C:/Users/Dell/workspace_ccstheia/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/package/cfg/release_pem3.h\" -xc",
+      "file"      : "C:/Users/Dell/workspace_ccstheia/uartecho/main_tirtos.c"
+   },
+   {
+      "directory" : "C:/Users/Dell/workspace_ccstheia/uartecho/Debug",
+      "command"   : "clang++ -I\"C:/Users/Dell/workspace_ccstheia/uartecho\" -I\"C:/TI/simplelink_cc13x0_sdk_4_20_02_07/source/ti/posix/ccs\" -I\"C:/Users/Dell/Downloads/ti-cgt-arm_20.2.7.LTS/include\" -DDeviceFamily_CC13X0 -I\"C:/TI/simplelink_cc13x0_sdk_4_20_02_07/source\" -I\"C:/TI/simplelink_cc13x0_sdk_4_20_02_07/kernel/tirtos/packages\" -I\"C:/TI/xdctools_3_51_03_28_core/packages\" -I\"C:/Users/Dell/workspace_ccstheia/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/..\" -Dxdc_target_types__=\"ti/targets/arm/elf/std.h\" -Dxdc_target_name__=M3 -Dxdc_cfg__xheader__=\"C:/Users/Dell/workspace_ccstheia/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/package/cfg/release_pem3.h\" -xc",
+      "file"      : "C:/Users/Dell/workspace_ccstheia/uartecho/mpu6050/mpu6050.c"
+   },
+   {
+      "directory" : "C:/Users/Dell/workspace_ccstheia/uartecho/Debug",
+      "command"   : "clang++ -I\"C:/Users/Dell/workspace_ccstheia/uartecho\" -I\"C:/TI/simplelink_cc13x0_sdk_4_20_02_07/source/ti/posix/ccs\" -I\"C:/Users/Dell/Downloads/ti-cgt-arm_20.2.7.LTS/include\" -DDeviceFamily_CC13X0 -I\"C:/TI/simplelink_cc13x0_sdk_4_20_02_07/source\" -I\"C:/TI/simplelink_cc13x0_sdk_4_20_02_07/kernel/tirtos/packages\" -I\"C:/TI/xdctools_3_51_03_28_core/packages\" -I\"C:/Users/Dell/workspace_ccstheia/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/..\" -Dxdc_target_types__=\"ti/targets/arm/elf/std.h\" -Dxdc_target_name__=M3 -Dxdc_cfg__xheader__=\"C:/Users/Dell/workspace_ccstheia/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/package/cfg/release_pem3.h\" -xc",
+      "file"      : "C:/Users/Dell/workspace_ccstheia/uartecho/mpu6050/mpu6050_angles.c"
+   },
+   {
+      "directory" : "C:/Users/Dell/workspace_ccstheia/uartecho/Debug",
+      "command"   : "clang++ -I\"C:/Users/Dell/workspace_ccstheia/uartecho\" -I\"C:/TI/simplelink_cc13x0_sdk_4_20_02_07/source/ti/posix/ccs\" -I\"C:/Users/Dell/Downloads/ti-cgt-arm_20.2.7.LTS/include\" -DDeviceFamily_CC13X0 -I\"C:/TI/simplelink_cc13x0_sdk_4_20_02_07/source\" -I\"C:/TI/simplelink_cc13x0_sdk_4_20_02_07/kernel/tirtos/packages\" -I\"C:/TI/xdctools_3_51_03_28_core/packages\" -I\"C:/Users/Dell/workspace_ccstheia/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/..\" -Dxdc_target_types__=\"ti/targets/arm/elf/std.h\" -Dxdc_target_name__=M3 -Dxdc_cfg__xheader__=\"C:/Users/Dell/workspace_ccstheia/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/package/cfg/release_pem3.h\" -xc",
+      "file"      : "C:/Users/Dell/workspace_ccstheia/uartecho/uartecho.c"
+   }
+]
