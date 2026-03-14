@@ -6,20 +6,20 @@ SHELL = cmd.exe
 
 CG_TOOL_ROOT := C:/Users/Dell/Downloads/ti-cgt-arm_20.2.7.LTS
 
-GEN_OPTS__FLAG := --cmd_file="C:/Users/Dell/workspace_ccstheia/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" 
-GEN_CMDS__FLAG := -l"C:/Users/Dell/workspace_ccstheia/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/linker.cmd" 
+GEN_OPTS__FLAG := --cmd_file="E:/datn/CC1310-module/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" 
+GEN_CMDS__FLAG := -l"E:/datn/CC1310-module/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/linker.cmd" 
 
 ORDERED_OBJS += \
-"./CC1310_LAUNCHXL.obj" \
-"./CC1310_LAUNCHXL_fxns.obj" \
-"./IIC.obj" \
-"./MPU_6050.obj" \
-"./ccfg.obj" \
-"./main_tirtos.obj" \
-"./uartecho.obj" \
-"./mpu6050/mpu6050.obj" \
-"./mpu6050/mpu6050_angles.obj" \
-"../CC1310_LAUNCHXL_TIRTOS.cmd" \
+"./Application/main_tirtos.obj" \
+"./Application/uartecho.obj" \
+"./Drivers/src/IIC.obj" \
+"./Drivers/src/MPU_6050.obj" \
+"./Middleware/MPU6050/mpu6050.obj" \
+"./Middleware/MPU6050/mpu6050_angles.obj" \
+"./Startup/CC1310_LAUNCHXL.obj" \
+"./Startup/CC1310_LAUNCHXL_fxns.obj" \
+"./Startup/ccfg.obj" \
+"../Startup/CC1310_LAUNCHXL_TIRTOS.cmd" \
 -l"ti/display/lib/display.aem3" \
 -l"ti/grlib/lib/ccs/m3/grlib.a" \
 -l"third_party/spiffs/lib/ccs/m3/spiffs_cc26xx.a" \
@@ -37,10 +37,14 @@ RMDIR := RMDIR /S/Q
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include subdir_vars.mk
--include mpu6050/subdir_vars.mk
--include subdir_rules.mk
--include mpu6050/subdir_rules.mk
+-include Application/subdir_vars.mk
+-include Drivers/src/subdir_vars.mk
+-include Middleware/MPU6050/subdir_vars.mk
+-include Startup/subdir_vars.mk
+-include Application/subdir_rules.mk
+-include Drivers/src/subdir_rules.mk
+-include Middleware/MPU6050/subdir_rules.mk
+-include Startup/subdir_rules.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -142,10 +146,10 @@ all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@$(MAKE) --no-print-directory -Onone "uartecho.out"
 
 dependents:
-	-cd C:/Users/Dell/workspace_ccstheia/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug && $(MAKE) all
+	-cd E:/datn/CC1310-module/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug && $(MAKE) all
 
 # Tool invocations
-uartecho.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS) C:/Users/Dell/workspace_ccstheia/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/tirtos_builds_CC1310_LAUNCHXL_release_ccs.lib
+uartecho.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS) E:/datn/CC1310-module/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/tirtos_builds_CC1310_LAUNCHXL_release_ccs.lib
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: Arm Linker'
 	"C:/Users/Dell/Downloads/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"uartecho.map" -i"C:/TI/simplelink_cc13x0_sdk_4_20_02_07/source" -i"C:/TI/simplelink_cc13x0_sdk_4_20_02_07/kernel/tirtos/packages" -i"C:/Users/Dell/Downloads/ti-cgt-arm_20.2.7.LTS/lib" --diag_wrap=off --display_error_number --warn_sections --xml_link_info="uartecho_linkInfo.xml" --rom_model -o "uartecho.out" $(ORDERED_OBJS)
@@ -155,14 +159,14 @@ uartecho.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS) C:/Users/Dell/workspace_ccstheia/t
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)
-	-$(RM) "CC1310_LAUNCHXL.obj" "CC1310_LAUNCHXL_fxns.obj" "IIC.obj" "MPU_6050.obj" "ccfg.obj" "main_tirtos.obj" "uartecho.obj" "mpu6050\mpu6050.obj" "mpu6050\mpu6050_angles.obj" 
-	-$(RM) "CC1310_LAUNCHXL.d" "CC1310_LAUNCHXL_fxns.d" "IIC.d" "MPU_6050.d" "ccfg.d" "main_tirtos.d" "uartecho.d" "mpu6050\mpu6050.d" "mpu6050\mpu6050_angles.d" 
+	-$(RM) "Application\main_tirtos.obj" "Application\uartecho.obj" "Drivers\src\IIC.obj" "Drivers\src\MPU_6050.obj" "Middleware\MPU6050\mpu6050.obj" "Middleware\MPU6050\mpu6050_angles.obj" "Startup\CC1310_LAUNCHXL.obj" "Startup\CC1310_LAUNCHXL_fxns.obj" "Startup\ccfg.obj" 
+	-$(RM) "Application\main_tirtos.d" "Application\uartecho.d" "Drivers\src\IIC.d" "Drivers\src\MPU_6050.d" "Middleware\MPU6050\mpu6050.d" "Middleware\MPU6050\mpu6050_angles.d" "Startup\CC1310_LAUNCHXL.d" "Startup\CC1310_LAUNCHXL_fxns.d" "Startup\ccfg.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 
 .PHONY: all clean dependents
 .SECONDARY:
-C:/Users/Dell/workspace_ccstheia/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/tirtos_builds_CC1310_LAUNCHXL_release_ccs.lib:
+E:/datn/CC1310-module/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/tirtos_builds_CC1310_LAUNCHXL_release_ccs.lib:
 
 -include ../makefile.targets
 
