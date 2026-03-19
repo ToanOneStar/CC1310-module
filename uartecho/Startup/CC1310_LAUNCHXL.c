@@ -616,8 +616,8 @@ const I2CCC26XX_HWAttrsV1 i2cCC26xxHWAttrs[CC1310_LAUNCHXL_I2CCOUNT] = {{
     .intNum = INT_I2C_IRQ,
     .intPriority = ~0,
     .swiPriority = 0,
-    .sdaPin = CC1310_LAUNCHXL_MPU6050_SDA, /* DIO8 - SDA MPU6050 */
-    .sclPin = CC1310_LAUNCHXL_MPU6050_SCL, /* DIO6 - SCL MPU6050 */
+    .sdaPin = CC1310_LAUNCHXL_MPU6050_SDA, /* DIO4 - SDA MPU6050 */
+    .sclPin = CC1310_LAUNCHXL_MPU6050_SCL, /* DIO2 - SCL MPU6050 */
 }};
 
 const I2C_Config I2C_config[CC1310_LAUNCHXL_I2CCOUNT] = {
