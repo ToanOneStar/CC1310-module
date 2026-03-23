@@ -45,7 +45,7 @@
 #include <ti/devices/cc13x0/inc/hw_ints.h>
 #include <ti/devices/cc13x0/inc/hw_memmap.h>
 
-#include "../Config/CC1310_LAUNCHXL.h"
+#include "Config/CC1310_LAUNCHXL.h"
 
 /*
  *  =============================== ADCBuf ===============================

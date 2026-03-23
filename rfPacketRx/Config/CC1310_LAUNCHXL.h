@@ -92,7 +92,7 @@ extern const PIN_Config BoardGpioInitTable[];
 #define CC1310_LAUNCHXL_GPIO_LED_OFF          0
 
 /* I2C */
-#define CC1310_LAUNCHXL_I2C0_SCL0             IOID_4
+#define CC1310_LAUNCHXL_I2C0_SCL0             IOID_3
 #define CC1310_LAUNCHXL_I2C0_SDA0             IOID_5
 
 /* I2S */
@@ -135,7 +135,7 @@ extern const PIN_Config BoardGpioInitTable[];
 
 /* UART Board */
 #define CC1310_LAUNCHXL_UART_RX               IOID_2          /* RXD */
-#define CC1310_LAUNCHXL_UART_TX               IOID_3          /* TXD */
+#define CC1310_LAUNCHXL_UART_TX               IOID_4          /* TXD */
 #define CC1310_LAUNCHXL_UART_CTS              IOID_19         /* CTS */
 #define CC1310_LAUNCHXL_UART_RTS              IOID_18         /* RTS */
 
